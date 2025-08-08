@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+    box-sizing: auto;
 }
 
 /* Custom Properties, update these for your own design */
@@ -10,20 +10,20 @@
     --ff-primary: Helvetica, Arial, sans-serif;
     --ff-secondary: Helvetica, Arial, monospace;
     
-    --fw-reg: 300;
-    --fw-bold: 900;
+    --fw-reg: 400;
+    --fw-bold: 1000;
     
-    --clr-light: #dbcaca;
+    --clr-light: #0a030310;
     --clr-dark: #303030;
-    --clr-accent: #daaf5f;
+    --clr-accent: #2b2929af;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
 
-    --bs: 0.25em 0.25em 0.75em rgba(0,0,.25),
-        0.125em 0.125 0.25em rgb(37, 33, 33);
+    --bs: 0.25em 0.25em 0.75em rgb(209, 203, 203),
+        0.125em 0.125 0.25em rgba(247, 202, 202, 0.911);
 }
 
 @media (min-width: 800px) {
@@ -50,7 +50,7 @@ body {
 }
 
 img {
-    display: block;
+    display: inline-block;
     max-width: 100%;
 }
 strong { font-weight: var(--fw-bold) }
@@ -92,6 +92,7 @@ h3 { font-size: var(--fs-h3) }
 
 .section__title {
     margin-bottom: .25em;
+    color: #312e2e;
 }
 
 .section__title--intro {
@@ -110,9 +111,11 @@ h3 { font-size: var(--fs-h3) }
 .section__subtitle--intro,
 .section__subtitle--about {
     background: var(--clr-accent);
-    padding: .25em;
+    padding: .5em;
+    font-size:medium;
     font-family: var(--ff-secondary);
-    margin-bottom:1em;
+    margin-bottom:2em;
+    color:rgb(209, 203, 203);
 }
 
 
@@ -123,7 +126,7 @@ header{
     padding: 1em;
 }
 .logo{
-    max-width: 200px;
+    max-width: 500px;
 
 /*  Intro section  */
 
@@ -256,13 +259,13 @@ header{
 }
 
 .portfolio {
-    display: grid;
+    display: -ms-grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .portfolio__item {
     background: var(--clr-accent);
-    overflow: hidden;
+    color: var(--clr-dark);
 }
 
 .portfolio__img {
