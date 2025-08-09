@@ -28,7 +28,7 @@
 
 @media (min-width: 800px) {
     :root {
-        --fs-h1: 4.5rem;
+        --fs-h1: 2.5em;
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
@@ -51,6 +51,7 @@ body {
 
 img {
     display: inline-block;
+    min-width: auto;
     max-width: 100%;
 }
 strong { font-weight: var(--fw-bold) }
@@ -93,14 +94,19 @@ h3 { font-size: var(--fs-h3) }
 .section__title {
     margin-bottom: .25em;
     color: #312e2e;
+    text-align: center;
 }
 
 .section__title--intro {
     font-weight: var(--fw-reg);
+    text-align: center;
+    font-size: var(--fs-h2);
 }
+
 
 .section__title--intro strong {
     display: block;
+    font-size: var(--fs-h1);
 } 
 
 .section__subtitle {
@@ -110,12 +116,12 @@ h3 { font-size: var(--fs-h3) }
 
 .section__subtitle--intro,
 .section__subtitle--about {
-    background: var(--clr-accent);
+    background: var(--clr-dark);
     padding: .5em;
-    font-size:medium;
+    font-size:  var(--fw-h2);
     font-family: var(--ff-secondary);
     margin-bottom:2em;
-    color:rgb(209, 203, 203);
+    color:rgb(240, 218, 206);
 }
 
 
@@ -179,6 +185,9 @@ header{
 .section__title--services {
     color: var(--clr-accent);
     position: relative;
+    font-size: --fs-h1;
+    text-align: justify;
+    padding-left: 2em; 
 }
 
 .section__title::after {
@@ -203,7 +212,7 @@ header{
      .services {
          display: flex;
          max-width: 1000px;
-         margin: 0auto;
+         margin: 2em;
      }
     .servic + .service {
         margin-left: 2em;
@@ -213,7 +222,7 @@ header{
  
 .about-me {
     max-width: 500px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .about-me__image {
