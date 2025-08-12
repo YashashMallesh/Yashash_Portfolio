@@ -106,7 +106,8 @@ h3 { font-size: var(--fs-h3) }
 
 .section__title--intro strong {
     display: block;
-    font-size: var(--fs-h1);
+    font-size: 200px;
+    font-family: 'Horizon', sans-serif;
 } 
 
 .section__subtitle {
@@ -346,4 +347,5 @@ header{
 .social-list__link {
     padding: .5em;
 }
+
 
