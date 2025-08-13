@@ -7,11 +7,11 @@
 /* Custom Properties, update these for your own design */
 
 :root {
-    --ff-primary: Helvetica, Arial, sans-serif;
+    --ff-primary: Helvetica, Arial, sans-serif ;
     --ff-secondary: Helvetica, Arial, monospace;
     
-    --fw-reg: 600;
-    --fw-bold: 2000;
+    --fw-reg: 300;
+    --fw-bold: 1000;
     
     --clr-light: #0a030310;
     --clr-dark: #363636;
@@ -50,9 +50,9 @@ body {
 }
 
 img {
-    display: inline-block;
+    display: block;
     min-width: auto;
-    max-width: 100%;
+    max-width: auto;
 }
 strong { font-weight: var(--fw-bold) }
 :focus{
@@ -106,22 +106,23 @@ h3 { font-size: var(--fs-h3) }
 
 .section__title--intro strong {
     display: block;
-    font-size: 200px;
+    font-size: 100px;
     font-family: 'Horizon', sans-serif;
 } 
 
 .section__subtitle {
     padding: 2.5em;
+    text-align: center;
     margin-top: -0.5%;
-    margin-right: 80%;
-    margin-left: 0%;
+    margin-right: 30%;
+    margin-left: 30%;
     font-size: var(--fs-h3);
 }
 
 .section__subtitle--intro,
 .section__subtitle--about {
     background: var(--clr-dark);
-    padding: .5em;
+    padding: 1.5em;
     font-size:  var(--fw-h2);
     font-family: var(--ff-secondary);
     margin-bottom:2em;
@@ -141,13 +142,16 @@ header{
 /*  Intro section  */
 
 .intro {
-    position: absolute;
+    position: relative;
 }
 .intro__img {
-    position: calc(var(--fs-h1)/2);
-    max-width: 20%; 
-    margin-top: 10%;
-    scroll-margin: 10%;
+    display: block;
+    margin-left: 30%;
+    margin-right: 30%;
+    max-width: auto;
+    margin-top: 200px;
+    align-items: center;
+
  }
 .section__subtitle--intro {
     display: inline-block;
@@ -347,5 +351,4 @@ header{
 .social-list__link {
     padding: .5em;
 }
-
 
