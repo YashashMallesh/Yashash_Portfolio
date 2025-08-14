@@ -130,29 +130,27 @@ h3 { font-size: var(--fs-h3) }
 }
 
 
+
 /* header */
 header{
     display: flex;
     justify-content: space-between;
     padding: 1em;
 }
-.logo{
-    max-width: 500px;
 
-/*  Intro section  */
 
-.intro {
+.intro__img{
+    display:block;
     position: relative;
-}
-.intro__img {
-    display: block;
-    margin-left: 30%;
-    margin-right: 30%;
-    max-width: auto;
-    margin-top: 200px;
+    padding-left: 10%;
+    max-width: 100%;
+    padding-right: 10%;
+    margin-top: 50px;
     align-items: center;
+    color: var(--clr-accent);
 
- }
+
+
 .section__subtitle--intro {
     display: inline-block;
 }
@@ -165,10 +163,12 @@ header{
         grid-template-columns: min-content max-content;
     }
     .intro__img {
-        grid-area: img;
+        mask-image: paint(squircle);
+        --squircle-radius: 20px; 
+        --squircle-smooth: 0.6;
         min-width: 250px;
-        position: relative;
-        z-index: 2;
+        max-width: auto;
+        position: auto;
     } 
     .section__subtitle--intro {
         align-self: start;
@@ -181,28 +181,31 @@ header{
         
     }
 }
+}
+
 
 /* my servises */
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url( /img/ );
+    background-image: url("c:/Users/HAPPY HOME/Desktop/Desktop/ss1.jpg") ;
+    padding: 10%;
+    background: opacity 0.6;;
     background-size: cover;
-   /* background-blend-mode: multipy */
     color: var(--clr-light);
     text-align: center;
 }
         
 .section__title--services {
     margin-left: 10%;
-    color: var(--clr-accent);
+    color: rgb(37, 35, 35);
     position: relative;
-    font-size: --fs-h1;
+    font-size: 5rem;
     text-align: right;
     padding-left: 2em; 
 }
 
 .section__title::after {
-    content: '';
+    content: " ";
     display: 25%;
     height: 1px;
     margin: 0.5en auto 1em;
@@ -211,6 +214,7 @@ header{
 }
 
 .services {
+    color: var(--clr-dark);
     margin-bottom: 4em;
     margin-left: 10%;;
 }
@@ -240,6 +244,7 @@ header{
 .about-me__image {
     box-shadow: var(--bs);
 }
+
 @media (min-width:600px) {
     .about-me {
         display: grid;
@@ -251,17 +256,19 @@ header{
     .section__subtitle--about {
         grid-area: title;
         grid-column: 1;
+        padding-left: 3rem;
     }
 
      .section__subtitle--about {
         grid-column: 1 / -1;
+        text-align: center;
         grid-row: 2;
         position: relative;
         left: -1em;
         width: calc(100% + 4em);
-        padding-left: 1em;
-        padding-right: calc(100% + 4em);
+        padding-left: 0%;
     }
+
          
     }
     
@@ -270,7 +277,7 @@ header{
         position: relative;
         z-index: 2;
     }
-}
+
 
 .my-work {
     background-color: var(--clr-dark);
@@ -306,6 +313,7 @@ header{
     transform: scale(1.2);
     opacity: .5;
 }
+
 
 /* footer */
 
@@ -351,4 +359,5 @@ header{
 .social-list__link {
     padding: .5em;
 }
+
 
