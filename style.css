@@ -65,14 +65,15 @@ strong { font-weight: var(--fw-bold) }
 .btn {
    display: inline-block;
     padding: .5em 2.5em;
-    background: var(--clr-accent);
+    background: #ffffff;
     color: var(--clr-dark);
     cursor: pointer;
-    font-size: .8rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
+    mask-border: var(--squircle-radius);
 }
 
 .btn:hover {
@@ -186,18 +187,19 @@ header{
 
 /* my servises */
 .my-services {
-    background-color: var(--clr-dark);
-    background-image: url("c:/Users/HAPPY HOME/Desktop/Desktop/ss1.jpg") ;
+    background-color: var(--clr-light);
+    background-image: url("c:/Users/HAPPY HOME/Desktop/Screenshot1 .jpg") ;
     padding: 10%;
-    background: opacity 0.6;;
+    background: opacity 0.9;;
     background-size: cover;
-    color: var(--clr-light);
+    color: rgb(90, 90, 89);
     text-align: center;
+    font-size: 1.5em;
 }
         
 .section__title--services {
     margin-left: 10%;
-    color: rgb(37, 35, 35);
+    color: rgb(46, 45, 45);
     position: relative;
     font-size: 5rem;
     text-align: right;
@@ -209,7 +211,7 @@ header{
     display: 25%;
     height: 1px;
     margin: 0.5en auto 1em;
-    background: var(--clr-light);
+    background: var(--clr-dark);
     opacity: 0.25;
 }
 
@@ -256,7 +258,7 @@ header{
     .section__subtitle--about {
         grid-area: title;
         grid-column: 1;
-        padding-left: 3rem;
+        margin-left: 10px;
     }
 
      .section__subtitle--about {
