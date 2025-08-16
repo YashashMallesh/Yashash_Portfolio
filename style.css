@@ -39,6 +39,7 @@
 
 html {
     scroll-behavior: smooth;
+    background-image:url();
 }
 body {
     background: var(--clr-light);
