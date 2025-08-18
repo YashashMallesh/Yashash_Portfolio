@@ -38,7 +38,7 @@
 /* General styles */
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: default;
     background-image: url("c:/Users/HAPPY HOME/Desktop/e3837946f8a487a3b62c64858fdc9ef4.jpg");
     background-attachment: fixed;
     background-attachment:no-repeat;
@@ -132,6 +132,7 @@ h3 { font-size: var(--fs-h3) }
 
 .section__subtitle--intro,
 .section__subtitle--about {
+
     background: var(--clr-dark);
     padding: 1.5em;
     font-size:  var(--fw-h2);
@@ -140,6 +141,18 @@ h3 { font-size: var(--fs-h3) }
     color:rgb(240, 218, 206);
     border-radius: 20px;
     shape-margin: var(--squircle-smooth);
+}
+.section__subtitle--about{
+    background: var(--clr-dark);
+    margin-right: 10%;
+    padding: 1.5em;
+    padding-right: 20%;
+.abou-me__body{
+    margin-left: 10%;
+    padding-left: 10%;
+    font-size: var(--fs-h3);
+    padding-right: 50%;
+}
 }
 
 
@@ -157,7 +170,7 @@ header{
     position: relative;
     padding-left: 25%;
     max-width: 100%;
-    padding-right: 10%;
+    padding-right: 50%;
     margin-top: 50px;
     align-items: center;
     color: var(--clr-accent);
@@ -222,10 +235,10 @@ header{
 }
 
 .section__title::after {
-    content: " ";
+    content: "as a student";
     display: 25%;
     height: 1px;
-    margin: 0.5en auto 1em;
+    margin: 0.2em auto 1em;
     background: var(--clr-dark);
     opacity: 0.25;
 }
@@ -233,7 +246,7 @@ header{
 .services {
     color: var(--clr-dark);
     margin-bottom: 4em;
-    margin-left: 10%;;
+    margin-left: 10%;
 }
 .service {
     max-width: 400px;
@@ -265,7 +278,7 @@ header{
 @media (min-width:600px) {
     .about-me {
         display: grid;
-        grid-template-columns: 1fr 200px;
+        grid-template-columns: 1fr 150px;
         grid-template-areas: "my image"
     }
 
@@ -304,16 +317,22 @@ header{
 }
 
 .portfolio {
-    display: -ms-grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(auto, minmax(300px, 1fr));
 }
 
 .portfolio__item {
-    background: var(--clr-dark);
-    color: var(--clr-dark);
+    background:rgb(145, 145, 145) ;
+    background-position: fixed;
+    color: #d6d1d1;
+    font-size: 2rem;
 }
 
 .portfolio__img {
+    max-width: 490px;
+    display: inline-table;
+    align-items: auto;
+    position:static;
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
@@ -321,14 +340,17 @@ header{
 
 
 .portfolio__item:focus {
-    position: relative;
+    position: absolute;
     z-index: 2;
 }
 
 .portfolio__img:hover,
 .portfolio__item:focus, .portfolio__img {
-    transform: scale(1.2);
-    opacity: .5;
+    border-style: var(--squircle-smooth);
+    --squircle-radius: 20px; 
+    --squircle-smooth: 0.6;
+    transform: scale(1);
+    opacity: 0.99;
 }
 
 
@@ -344,8 +366,8 @@ header{
 }
 
 .footer a { 
-    color: inherit;
-    text-decoration: wheat;
+    color: wheat;;
+    text-decoration:solid;
 }
 
 .footer__link {
@@ -358,23 +380,42 @@ header{
 }
 
 .footer__link:hover {
-    text-decoration: underline;
+    text-decoration: solid;
 }
 
 .social-list {
     list-style: none;
-    display: flex;
-    justify-content: center;
+    display: inline-flex;
+    text-align: center;
     margin: 2em 0 0;
-    padding: 0;
+    padding-left: 40%;
 }
 
 .social-list__item {
-    margin: 0 .5em;
+    margin: 0 .5em;;
 }
 
-.social-list__link {
+.social-list__link1 {
+    color: rgb(231, 80, 21);
+    content: icon;
+    padding-right: 5px;
+}
+.social-list__link2 {
+    color: rgb(46, 146, 228);
+    content: icon;
+    symbols: inherit;
     padding: .5em;
 }
-
+.social-list__link3 {
+    color: #111;
+    content: icon;
+    symbols: inherit;
+    padding: .5em;
+}
+.social-list__link4 {
+    color: #111;
+    content: icon;
+    symbols: inherit;
+    padding: .5em;
+}
 
