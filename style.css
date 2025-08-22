@@ -424,10 +424,15 @@ header{
 }
 
 .portfolio-itm {
+    background-image: url("c:/Users/HAPPY HOME/Desktop/4593e9acaf25e5df459a7f52f5e3c0d5.jpg");
+    background-position: center;
+    background-size: 5000px;
+    background-repeat: no-repeat;
     display: grid;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    min-width: 800px;
     margin: 2em 0;
 
 }
@@ -438,3 +443,4 @@ header{
         text-align: center;
         
 }
+
