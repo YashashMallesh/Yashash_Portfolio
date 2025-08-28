@@ -39,7 +39,7 @@
 
 html {
     scroll-behavior: default;
-    background-image: url("c:/Users/HAPPY HOME/Desktop/e3837946f8a487a3b62c64858fdc9ef4.jpg");
+    background-image: url("images/background.jpg");
     background-attachment: fixed;
     background-attachment:no-repeat;
     background-size:auto;
@@ -217,7 +217,7 @@ header{
 /* my servises */
 .my-services {
     background-color: var(--clr-light);
-    background-image: url("c:/Users/HAPPY HOME/Desktop/Screenshot1 .jpg") ;
+    background-image: url("images/Screenshot1\ .jpg") ;
     padding: 10%;
     background: opacity 0.9;;
     background-size: cover;
@@ -424,7 +424,7 @@ header{
 }
 
 .portfolio-itm {
-    background-image: url("c:/Users/HAPPY HOME/Desktop/4593e9acaf25e5df459a7f52f5e3c0d5.jpg");
+    background-image: url("images/bird.jpg");
     background-position: center;
     background-size: 5000px;
     background-repeat: no-repeat;
@@ -443,4 +443,3 @@ header{
         text-align: center;
         
 }
-
