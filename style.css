@@ -217,7 +217,7 @@ header{
 /* my servises */
 .my-services {
     background-color: var(--clr-light);
-    background-image: url("images/Screenshot1\ .jpg") ;
+    background-image: url("images/Screenshot1.jpg") ;
     padding: 10%;
     background: opacity 0.9;;
     background-size: cover;
@@ -443,3 +443,4 @@ header{
         text-align: center;
         
 }
+
