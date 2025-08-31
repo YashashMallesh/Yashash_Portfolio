@@ -39,7 +39,7 @@
 
 html {
     scroll-behavior: default;
-    background-image: url("images/background.jpg");
+    background-image: url("images/bg.jpg");
     background-attachment: fixed;
     background-attachment:no-repeat;
     background-size:auto;
@@ -472,3 +472,4 @@ header{
         text-align: center;
         
 }
+
