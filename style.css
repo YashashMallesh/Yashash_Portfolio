@@ -38,7 +38,7 @@
 /* General styles */
 
 html {
-    scroll-behavior: default;
+    scroll-behavior: smooth;
     background-image: url("images/bg.jpg");
     background-attachment: fixed;
     background-attachment:no-repeat;
@@ -195,14 +195,14 @@ header{
 
 
 .intro__img{
-    display:block;
+    display:inline-block;
+	align-items: center;
     position: relative;
     filter: drop-shadow(rgb(24, 24, 24) 1rem 1rem 10px);
-    padding-left: 25%;
+    padding-left: auto;
     max-width: 100%;
-    padding-right: 50%;
+    padding-right: auto;
     margin-top: 50px;
-    align-items: center;
     color: var(--clr-accent);
     border-radius: 20px;
     shape-margin: var(--squircle-border-radius);
@@ -472,5 +472,6 @@ header{
         text-align: center;
         
 }
+
 
 
