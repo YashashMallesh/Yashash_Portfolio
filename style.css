@@ -486,3 +486,12 @@ header{
         text-align: center;
         
 }
+.logo img{
+	hieght: 50px;
+	width: auto;
+	display: block;
+}
+.logo{
+	text-align: center;
+	margin: 20px 0;
+}
