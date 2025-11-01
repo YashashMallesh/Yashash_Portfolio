@@ -487,7 +487,7 @@ header{
         
 }
 .logo img{
-	hieght: 50px;
+	hieght: 150px;
 	width: auto;
 	display: block;
 }
@@ -495,3 +495,4 @@ header{
 	text-align: center;
 	margin: 20px 0;
 }
+
